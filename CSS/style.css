@@ -1,13 +1,20 @@
 @import url(https://fonts.googleapis.com/css?family=Playfair+Display:regular,500,600,700,800,900,italic,500italic,600italic,700italic,800italic,900italic);
 
+:root {
+  --background-color: #d4f3d9;
+  --secondary-color: #267c33;
+  --text-color: #092c0e;
+  --accent-color: #b8893b;
+}
+
 body {
   font-family:
     Playfair Display,
     sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
 }
 
-/* For the backwards e */
-.e {
-  display: inline-block;
-  transform: rotateY(180deg);
+ul {
+  list-style: none;
 }
