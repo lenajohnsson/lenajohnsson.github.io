@@ -1,0 +1,13 @@
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display:regular,500,600,700,800,900,italic,500italic,600italic,700italic,800italic,900italic);
+
+body {
+  font-family:
+    Playfair Display,
+    sans-serif;
+}
+
+/* For the backwards e */
+.e {
+  display: inline-block;
+  transform: rotateY(180deg);
+}
