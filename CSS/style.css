@@ -84,7 +84,7 @@ p {
 .div-image {
   justify-self: center;
   img {
-    max-width: 300px;
+    max-width: 150px;
   }
 }
 
