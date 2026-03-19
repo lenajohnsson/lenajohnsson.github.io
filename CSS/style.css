@@ -5,6 +5,15 @@
   --secondary-color: #267c33;
   --text-color: #092c0e;
   --accent-color: #b8893b;
+  --secondary-accent-color: #e0b878;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
 }
 
 body {
@@ -13,8 +22,95 @@ body {
     sans-serif;
   background-color: var(--background-color);
   color: var(--text-color);
+  height: 100%;
+  margin: 0;
+
+  /* border: solid green 2px; */
+}
+
+.wrapper {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  max-inline-size: 850px;
+  margin-inline: auto;
+  min-height: 100%;
+
+  /* border: solid red 2px; */
+}
+
+.div-header {
+  h1 {
+    font-size: 3rem;
+  }
 }
 
 ul {
   list-style: none;
+  padding-inline-start: 0;
+
+  /* border: solid green 1px; */
+
+  a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: 0.4s;
+  }
+  a:hover {
+    color: var(--accent-color);
+    font-size: 1.3rem;
+  }
+}
+
+.nav-bar-header {
+  ul {
+    display: flex;
+    justify-content: end;
+    gap: 30px;
+  }
+}
+
+.div-main {
+  min-height: 100%;
+  padding-block-end: 30px;
+  /* border: dotted blue 1px; */
+}
+
+p {
+  font-weight: 500;
+}
+
+.div-image {
+  justify-self: center;
+  img {
+    max-width: 300px;
+  }
+}
+
+.nav-bar-main {
+  margin-block-end: 50px;
+  border-bottom: solid var(--accent-color) 1px;
+  ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  a {
+    font-size: 1.6rem;
+  }
+  a:hover {
+    font-size: 1.7rem;
+  }
+}
+
+footer {
+  position: flow;
+  bottom: 0;
+  padding-block-start: 30px;
+
+  border-top: solid var(--accent-color) 1px;
+
+  .copy {
+    color: var(--accent-color);
+  }
 }
