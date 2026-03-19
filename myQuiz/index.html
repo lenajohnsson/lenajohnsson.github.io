@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lenas Lilla Quiz</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="screen active" id="start-screen">
+        <h1>Ett Quiz Om Sverige</h1>
+        <p>Prova dina kunskaper om Sverige med detta lilla quiz</p>
+        <button id="start-btn">Börja Quiza</button>
+      </div>
+
+      <div class="screen" id="quiz-screen">
+        <div class="quiz-header">
+          <h2 id="question-text"></h2>
+          <div class="quiz-info">
+            <p>
+              Fråga <span id="current-question"></span> av
+              <span id="total-questions"></span>
+            </p>
+            <p>Poäng: <span id="score"></span></p>
+          </div>
+        </div>
+        <div class="answers-container" id="answers-container">
+          <!-- answer buttons -->
+        </div>
+        <div class="progress-bar">
+          <div class="progress" id="progress"></div>
+        </div>
+      </div>
+
+      <div class="screen" id="result-screen">
+        <h1>Quiz Resultat</h1>
+        <div class="result-info">
+          <p>
+            Resultat: <span id="final-score"></span> av
+            <span id="max-score"></span>
+          </p>
+          <div id="result-message"></div>
+        </div>
+        <button id="restart-btn">Quiza Igen</button>
+      </div>
+    </div>
+
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
