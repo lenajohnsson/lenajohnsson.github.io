@@ -41,9 +41,31 @@ body {
 }
 
 .div-header {
+  background-size: cover;
+  height: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-block-start: 30px;
+
   h1 {
-    font-size: 3rem;
+    font-size: 3.5rem;
+    margin-block: 0;
+    margin-inline-start: 5px;
   }
+
+  ul {
+    margin-block: 0;
+    margin-inline-end: 5px;
+  }
+}
+
+.index-header {
+  background-image: url(/images/header.jpg);
+}
+
+.portfolio-header {
+  background-image: url(/images/portfolio.jpg);
 }
 
 ul {
@@ -56,7 +78,7 @@ ul {
     text-decoration: none;
     color: var(--text-color);
     font-weight: 600;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     transition: var(--transition-time);
   }
   a:hover {
@@ -81,13 +103,6 @@ ul {
 
 p {
   font-weight: 500;
-}
-
-.div-image {
-  justify-self: center;
-  img {
-    max-width: 150px;
-  }
 }
 
 .nav-bar-main {

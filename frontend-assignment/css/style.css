@@ -1,0 +1,312 @@
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display:regular,500,600,700,800,900,italic,500italic,600italic,700italic,800italic,900italic);
+
+:root {
+  --secondary-color: #944c11;
+  --background-color: #d4f1f3;
+  --text-color: #09252c;
+}
+
+/* --- TYPOGRAPHY --- */
+* {
+  font-family:
+    Playfair Display,
+    serif;
+}
+body {
+  background-color: var(--background-color);
+
+  font-weight: 600;
+  color: var(--text-color);
+}
+
+/* For the backwards e */
+.e {
+  display: inline-block;
+  transform: rotateY(180deg);
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+@media screen and (max-width: 760px) {
+  .light-font-color-m {
+    color: var(--background-color);
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .light-font-color-s {
+    color: var(--background-color);
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .light-font-color-xs {
+    color: var(--background-color);
+  }
+}
+
+/* --- LAYOUT --- */
+/* a wrapper for the whole page */
+.wrapper {
+  display: grid;
+  grid-template-rows: auto auto auto;
+  max-inline-size: 850px;
+  margin-inline: auto;
+}
+
+/* for the info about the musicgroups */
+.div-music-list {
+  display: grid;
+  margin-inline-start: 5px;
+
+  p {
+    margin-block: 0;
+  }
+}
+
+/* some layout styles */
+.div-flex {
+  display: flex;
+}
+
+.div-flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.div-flex-sb {
+  display: flex;
+  justify-content: space-between;
+}
+
+.div-grid-3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
+}
+
+.align-center {
+  align-content: center;
+}
+
+.margin-inline-start-10 {
+  margin-inline-start: 10px;
+}
+
+.margin-block-start-30 {
+  margin-block-start: 30px;
+}
+
+@media screen and (max-width: 500px) {
+  .div-flex-media {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+/* --- IMAGES --- */
+img {
+  display: block;
+  max-inline-size: 100%;
+}
+
+/* the background of the header */
+.header-bg {
+  background-image: url('../images/header.png');
+  background-size: cover;
+  padding-block: 100px 0;
+}
+
+.header-bg h1 {
+  display: flex;
+  justify-content: end;
+  font-size: 3.6rem;
+  font-weight: 900;
+  margin: 0 5px 0 0;
+  padding-block-end: 40px;
+}
+
+.header-bg ul {
+  align-content: end;
+  padding-inline-start: 5px;
+
+  a {
+    color: var(--background-color);
+    font-size: 1.4rem;
+    transition: 0.4s;
+  }
+
+  a:hover {
+    font-size: 1.5rem;
+  }
+}
+
+/* the background of the image with lyrics */
+.music-bg {
+  background-image: url('../images/sittin-on-the-dock.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-size: 0.9rem;
+  color: var(--background-color);
+  padding-inline-start: 3px;
+  margin-block-start: 50px;
+}
+
+/* the thumb-nails in the music list */
+.thumb-nails {
+  width: auto;
+  border-radius: 4px;
+}
+
+/* the images in the group info page */
+.info-img {
+  max-width: 200px;
+}
+
+/* --- NAV-BAR, LISTS and ANCHORS --- */
+/* the navigation bar */
+.nav-bar ul {
+  display: flex;
+  gap: 20px;
+}
+
+ul {
+  list-style: none;
+  padding-inline-start: 0;
+}
+
+/* the list for the music groups */
+.music-list li {
+  padding-block: 10px;
+  display: grid;
+  grid-template-columns: 1fr 2fr 3fr;
+
+  a {
+    color: var(--secondary-color);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .music-list li {
+    grid-template-columns: auto 2fr;
+  }
+  .thumb-nails {
+    max-width: 122px;
+  }
+  .margin-inline-start-10 {
+    margin-inline-start: 0;
+    margin-block-start: 5px;
+  }
+}
+
+/* the links */
+a {
+  text-decoration: none;
+  transition: 0.4s;
+}
+
+a:hover,
+a:focus-visible {
+  font-size: 1.1rem;
+}
+
+a:visited {
+  color: var(--text-color);
+}
+
+/* --- BUTTONS and SEARCHBAR --- */
+/* standard values for the buttons */
+button {
+  font-size: 0.9rem;
+  background-color: var(--text-color);
+  color: var(--background-color);
+  border: none;
+  border-radius: 4px;
+  padding: 7.5px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+button:hover,
+button:focus-visible {
+  background-color: var(--background-color);
+  border: 1px solid var(--text-color);
+  color: var(--text-color);
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+  /* padding-block: 0.5rem;
+  padding-inline: 1rem; */
+}
+
+.page-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.page-button {
+  padding-block: 0.5rem;
+  padding-inline: 1rem;
+}
+
+.active-page-btn {
+  padding-block: 0.5rem;
+  padding-inline: 1rem;
+  background-color: var(--background-color);
+  border: 1px solid var(--text-color);
+  color: var(--text-color);
+}
+
+.add-group-button {
+  width: 100%;
+  margin-block-start: 5px;
+}
+
+.add-to-list-button {
+  margin-block-start: 25px;
+}
+
+/* for the search bar */
+.input-item {
+  font-family: Playfair Display;
+  font-size: 0.9rem;
+  color: var(--text-color);
+  background-color: var(--background-color);
+  border: none;
+  border-bottom: solid 1px var(--text-color);
+  padding: 10px 0 5px 0;
+}
+
+input:focus {
+  outline: none;
+  border-bottom: solid 2px var(--text-color);
+}
+
+.div-input {
+  margin-block: 30px;
+}
+
+.add-item {
+  padding: 0;
+  margin-inline-start: 10px;
+}
+
+input::placeholder {
+  font-family: Playfair Display;
+}
+.search-result {
+  font-size: 0.9rem;
+  margin-block: 10px;
+}
+
+/* --- FOOTER --- */
+footer {
+  margin-block-start: 50px;
+  margin-block-end: 20px;
+  border-top: solid var(--text-color) 1px;
+}

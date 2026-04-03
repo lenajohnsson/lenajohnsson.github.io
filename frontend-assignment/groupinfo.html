@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="css/style.css" rel="stylesheet" />
+    <title>Musikgrupper</title>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div>
+        <header>
+          <div class="header-bg">
+            <h1>
+              <span class="light-font-color-m">Ech</span
+              ><span class="light-font-color-s">oV<span class="e">e</span></span
+              ><span class="light-font-color-xs">rse</span>
+            </h1>
+            <nav class="nav-bar">
+              <ul>
+                <li><a href="index.html">Hem</a></li>
+                <li><a href="musicgroups.html">Musikgrupper</a></li>
+              </ul>
+            </nav>
+          </div>
+        </header>
+      </div>
+
+      <div>
+        <main>
+          <div>
+            <h2 id="group-name"></h2>
+          </div>
+
+          <!-- INFO ABOUT THE GROUP -->
+          <div class="div-flex">
+            <div>
+              <img class="info-img" id="group-img" src="images/m1.png" alt="" />
+            </div>
+            <div class="margin-inline-start-10 div-flex-column">
+              <div>
+                <p>Genre: <span id="genre"></span></p>
+              </div>
+              <div>
+                <p>Etableringsår: <span id="year"></span></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="div-grid-3 margin-block-start-30">
+            <!-- LIST OF ARTISTS -->
+            <div>
+              <h3>Artister</h3>
+              <ul id="artists-list"></ul>
+            </div>
+
+            <!-- LIST OF ALBUMS -->
+            <div>
+              <h3>Album</h3>
+              <ul id="albums-list"></ul>
+            </div>
+          </div>
+        </main>
+      </div>
+
+      <div>
+        <footer class="div-flex-sb">
+          <p>&copy; 2026, EchoV<span class="e">e</span>rse</p>
+          <div class="name-tag">
+            <p>Lena Johnsson</p>
+          </div>
+        </footer>
+      </div>
+    </div>
+    <script type="module" src="js/group-info.js"></script>
+  </body>
+</html>
