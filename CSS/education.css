@@ -9,6 +9,16 @@ body {
   box-shadow: var(--box-shadow) var(--dark-peach);
 }
 
+.ham .line {
+  stroke: var(--dark-turquoise);
+}
+
+.menu {
+  a {
+    color: var(--dark-turquoise);
+  }
+}
+
 /* ---FOOTER--- */
 
 .div-footer {

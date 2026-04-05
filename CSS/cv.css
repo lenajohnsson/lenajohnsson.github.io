@@ -9,6 +9,16 @@ body {
   box-shadow: var(--box-shadow) var(--dark-pink);
 }
 
+.ham .line {
+  stroke: var(--dark-green);
+}
+
+.menu {
+  a {
+    color: var(--dark-green);
+  }
+}
+
 /* ---FOOTER--- */
 
 .div-footer {

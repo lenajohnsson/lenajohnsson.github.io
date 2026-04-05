@@ -24,7 +24,22 @@ body {
   text-shadow: 1px 1px 3px var(--dark-blue);
 }
 
+.ham .line {
+  stroke: var(--dark-purple);
+}
+
+.menu {
+  a {
+    color: var(--dark-purple);
+  }
+}
+
 /* ---MAIN--- */
+
+img {
+  max-width: 250px;
+  border-radius: 100%;
+}
 
 /* ---section 1--- */
 .div-section1 {
@@ -33,11 +48,6 @@ body {
   box-shadow: var(--box-shadow) var(--dark-pink);
   position: relative;
   isolation: isolate;
-}
-
-.img-section1 {
-  max-width: 250px;
-  border-radius: 100%;
 }
 
 .div-img1 {
@@ -106,11 +116,6 @@ body {
   p {
     text-align: right;
   }
-}
-
-.img-section2 {
-  max-width: 250px;
-  border-radius: 100%;
 }
 
 .div-img2 {
