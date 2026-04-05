@@ -1,0 +1,26 @@
+body {
+  background-color: var(--light-pink);
+}
+
+/* ---HEADER--- */
+
+.index-header {
+  background-color: var(--light-peach);
+  box-shadow: var(--box-shadow) var(--dark-peach);
+}
+
+/* ---FOOTER--- */
+
+.div-footer {
+  background-color: var(--light-purple);
+  color: var(--dark-purple);
+  box-shadow: var(--box-shadow) var(--dark-purple);
+}
+
+.svg-github {
+  color: var(--dark-purple);
+}
+
+.svg-linkedin {
+  color: var(--dark-purple);
+}

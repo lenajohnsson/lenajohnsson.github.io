@@ -1,0 +1,71 @@
+body {
+  background-color: var(--light-peach);
+}
+
+/* ---HEADER--- */
+
+.index-header {
+  background-color: var(--light-blue);
+  box-shadow: var(--box-shadow) var(--dark-blue);
+}
+
+.first-name {
+  font-family: Asset, sans-serif;
+  color: var(--dark-blue);
+  font-size: 3.7rem;
+  line-height: 1;
+}
+
+.last-name {
+  font-family: Dynalight, sans-serif;
+  color: var(--dark-blue);
+  font-size: 7rem;
+  line-height: 0.5;
+  text-shadow: 1px 1px 3px var(--dark-blue);
+}
+
+/* ---MAIN--- */
+
+.div-section1 {
+  background-color: var(--light-pink);
+  color: var(--dark-pink);
+  box-shadow: var(--box-shadow) var(--dark-pink);
+}
+
+.div-section2 {
+  background-color: var(--light-green);
+  color: var(--dark-green);
+  box-shadow: var(--box-shadow) var(--dark-green);
+
+  p {
+    text-align: right;
+  }
+}
+
+.img-section1 {
+  max-width: 250px;
+  border-radius: 100%;
+  box-shadow: var(--box-shadow) var(--dark-pink);
+}
+
+.img-section2 {
+  max-width: 250px;
+  border-radius: 100%;
+  box-shadow: var(--box-shadow) var(--dark-green);
+}
+
+/* ---FOOTER--- */
+
+.div-footer {
+  background-color: var(--light-yellow);
+  color: var(--dark-yellow);
+  box-shadow: var(--box-shadow) var(--dark-yellow);
+}
+
+.svg-github {
+  color: var(--dark-yellow);
+}
+
+.svg-linkedin {
+  color: var(--dark-yellow);
+}

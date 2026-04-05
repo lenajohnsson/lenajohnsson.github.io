@@ -1,0 +1,52 @@
+body {
+  background-color: var(--light-purple);
+}
+
+/* ---HEADER--- */
+
+.portfolio-header {
+  background-color: var(--light-green);
+  color: var(--dark-green);
+  box-shadow: var(--box-shadow) var(--dark-green);
+
+  h1 {
+    font-family: Ultra, sans-serif;
+    font-size: 3.5rem;
+  }
+}
+
+/* ---MAIN--- */
+
+.div-section1 {
+  background-color: var(--light-blue);
+  color: var(--dark-blue);
+  box-shadow: var(--box-shadow) var(--dark-blue);
+}
+
+.div-section2 {
+  background-color: var(--light-pink);
+  color: var(--dark-pink);
+  box-shadow: var(--box-shadow) var(--dark-pink);
+}
+
+.div-section3 {
+  background-color: var(--light-turquoise);
+  color: var(--dark-turquoise);
+  box-shadow: var(--box-shadow) var(--dark-turquoise);
+}
+
+/* ---FOOTER--- */
+
+.div-footer {
+  background-color: var(--light-peach);
+  color: var(--dark-peach);
+  box-shadow: var(--box-shadow) var(--dark-peach);
+}
+
+.svg-github {
+  color: var(--dark-peach);
+}
+
+.svg-linkedin {
+  color: var(--dark-peach);
+}

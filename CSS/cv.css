@@ -1,0 +1,26 @@
+body {
+  background-color: var(--light-blue);
+}
+
+/* ---HEADER--- */
+
+.index-header {
+  background-color: var(--light-pink);
+  box-shadow: var(--box-shadow) var(--dark-pink);
+}
+
+/* ---FOOTER--- */
+
+.div-footer {
+  background-color: var(--light-green);
+  color: var(--dark-green);
+  box-shadow: var(--box-shadow) var(--dark-green);
+}
+
+.svg-github {
+  color: var(--dark-green);
+}
+
+.svg-linkedin {
+  color: var(--dark-green);
+}
