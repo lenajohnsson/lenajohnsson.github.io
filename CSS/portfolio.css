@@ -30,13 +30,33 @@ body {
 img {
   max-width: 200px;
   border-radius: 100%;
-  margin-inline-end: 10px;
+  transition: 0.8s ease-out;
+}
+
+img:hover {
+  max-width: 300px;
+  border-radius: 10%;
+}
+
+button {
+  cursor: pointer;
+}
+
+.opening-p {
+  display: grid;
+  justify-content: center;
+  border-radius: var(--border-radius);
+  padding: var(--padding);
+  margin-block: var(--margin-block);
+  background-color: var(--light-yellow);
+  color: var(--dark-yellow);
+  box-shadow: var(--box-shadow) var(--dark-yellow);
 }
 
 .main-sections {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, auto);
+  grid-template-rows: repeat(3, auto);
   grid-column-gap: 10px;
   grid-row-gap: 10px;
 }
@@ -45,47 +65,119 @@ img {
   flex-direction: column;
 }
 
+/* ---section 1--- */
 .div-section1 {
   grid-area: 1/1/2/3;
   background-color: var(--light-blue);
   color: var(--dark-blue);
   box-shadow: var(--box-shadow) var(--dark-blue);
   margin-block-end: 0;
+
   button {
-    background-color: var(--light-pink);
-    border: 2px solid var(--dark-pink);
+    background-color: var(--light-green);
+    border: 2px solid var(--dark-green);
+  }
+  .svg-github {
+    color: var(--dark-green);
+  }
+  a {
+    color: var(--dark-green);
   }
 }
 
+/* ---section 2--- */
 .div-section2 {
   grid-area: 2/1/3/3;
   background-color: var(--light-pink);
   color: var(--dark-pink);
   box-shadow: var(--box-shadow) var(--dark-pink);
-  margin-block-start: 0;
+  margin-block: 0;
+
   button {
     background-color: var(--light-turquoise);
     border: 2px solid var(--dark-turquoise);
   }
+  .svg-github {
+    color: var(--dark-turquoise);
+  }
+  a {
+    color: var(--dark-turquoise);
+  }
 }
 
+/* ---section 3--- */
 .div-section3 {
   grid-area: 1/3/3/4;
   background-color: var(--light-turquoise);
   color: var(--dark-turquoise);
   box-shadow: var(--box-shadow) var(--dark-turquoise);
+  margin-block-end: 0;
+
   button {
     background-color: var(--light-blue);
     border: 2px solid var(--dark-blue);
   }
+  .svg-github {
+    color: var(--dark-blue);
+  }
+  a {
+    color: var(--dark-blue);
+  }
 }
 
+/* ---section 4--- */
+.div-section4 {
+  grid-area: 3/1/4/4;
+  background-color: var(--light-green);
+  color: var(--dark-green);
+  box-shadow: var(--box-shadow) var(--dark-green);
+  margin-block-start: 0;
+
+  button {
+    background-color: var(--light-pink);
+    border: 2px solid var(--dark-pink);
+  }
+  .svg-github {
+    color: var(--dark-pink);
+  }
+  a {
+    color: var(--dark-pink);
+  }
+}
+
+/* ---"headers" in the sections--- */
 .section-header1 {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  width: 100%;
+
+  /* border: solid 1px black; */
 }
 
-.section-main1 {
+.section-header1 > div:last-child {
+  justify-self: end;
+}
+
+.section-header2 {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+/* ---"main" in the sections--- */
+.section-main1,
+.showcase-link a {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.section-main2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* ---FOOTER--- */

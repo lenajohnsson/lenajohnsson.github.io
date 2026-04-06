@@ -22,7 +22,7 @@
   --dark-pink: #bd4772;
   --dark-yellow: #c4a601;
   --dark-purple: #5f25b6;
-  --dark-turquoise: #09866b;
+  --dark-turquoise: #097e86;
 
   /* ---FREQUENTLY USED VALUES--- */
   --border-radius: 40px;
@@ -62,7 +62,6 @@ a {
 .div-header {
   display: grid;
   grid-template-columns: 1fr auto 1fr;
-  justify-items: center;
   padding-block: 1px 30px;
   margin-block: 10px 30px;
   border-radius: var(--border-radius);
