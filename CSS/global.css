@@ -16,13 +16,13 @@
   --light-yellow: #ffee93;
   --light-purple: #dbcdf0;
   --light-turquoise: #98f5e1;
-  --dark-green: #489755;
-  --dark-peach: #f76c27;
-  --dark-blue: #397bb8;
+  --dark-green: #0a721c;
+  --dark-peach: #c04101;
+  --dark-blue: #1163b1;
   --dark-pink: #bd4772;
-  --dark-yellow: #c4a601;
+  --dark-yellow: #917b02;
   --dark-purple: #5f25b6;
-  --dark-turquoise: #097e86;
+  --dark-turquoise: #015f66;
 
   /* ---FREQUENTLY USED VALUES--- */
   --border-radius: 40px;
@@ -134,6 +134,12 @@ a {
 }
 
 /* ---MAIN--- */
+
+.no-link {
+  p {
+    font-size: 1.5rem;
+  }
+}
 
 .div-section {
   display: flex;

@@ -4,9 +4,15 @@ body {
 
 /* ---HEADER--- */
 
-.index-header {
+.cv-header {
   background-color: var(--light-pink);
+  color: var(--dark-pink);
   box-shadow: var(--box-shadow) var(--dark-pink);
+
+  h1 {
+    font-family: Ultra, sans-serif;
+    font-size: 3.5rem;
+  }
 }
 
 .ham .line {
@@ -17,6 +23,88 @@ body {
   a {
     color: var(--dark-green);
   }
+}
+
+/* ---MAIN--- */
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: var(--border-radius);
+  padding: var(--padding);
+  margin-block: var(--margin-block);
+  background-color: var(--light-green);
+  color: var(--dark-green);
+  box-shadow: var(--box-shadow) var(--dark-green);
+
+  a {
+    font-size: 1.2rem;
+    color: var(--dark-green);
+    transition: 0.5s ease;
+  }
+  a:hover {
+    font-size: 1.3rem;
+  }
+}
+
+.div-section {
+  h2 {
+    font-size: 1.3rem;
+  }
+  h3 {
+    font-size: 1rem;
+    margin-block: 0;
+  }
+}
+
+.div-section1 {
+  flex-direction: column;
+  background-color: var(--light-turquoise);
+  color: var(--dark-turquoise);
+  box-shadow: var(--box-shadow) var(--dark-turquoise);
+}
+
+.div-section2 {
+  flex-direction: column;
+  background-color: var(--light-peach);
+  color: var(--dark-peach);
+  box-shadow: var(--box-shadow) var(--dark-peach);
+}
+
+.div-section3 {
+  flex-direction: column;
+  background-color: var(--light-yellow);
+  color: var(--dark-yellow);
+  box-shadow: var(--box-shadow) var(--dark-yellow);
+}
+
+.div-section4 {
+  flex-direction: column;
+  background-color: var(--light-purple);
+  color: var(--dark-purple);
+  box-shadow: var(--box-shadow) var(--dark-purple);
+}
+
+.div-section5 {
+  flex-direction: column;
+  background-color: var(--light-turquoise);
+  color: var(--dark-turquoise);
+  box-shadow: var(--box-shadow) var(--dark-turquoise);
+}
+
+.div-section6 {
+  flex-direction: column;
+  background-color: var(--light-pink);
+  color: var(--dark-pink);
+  box-shadow: var(--box-shadow) var(--dark-pink);
+}
+
+.div-section7 {
+  flex-direction: column;
+  background-color: var(--light-peach);
+  color: var(--dark-peach);
+  box-shadow: var(--box-shadow) var(--dark-peach);
 }
 
 /* ---FOOTER--- */
