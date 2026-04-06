@@ -27,23 +27,12 @@ body {
 
 /* ---MAIN--- */
 .navigation {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-radius: var(--border-radius);
-  padding: var(--padding);
-  margin-block: var(--margin-block);
   background-color: var(--light-purple);
   color: var(--dark-purple);
   box-shadow: var(--box-shadow) var(--dark-purple);
 
   a {
-    font-size: 1.2rem;
     color: var(--dark-purple);
-    transition: 0.5s ease;
-  }
-  a:hover {
-    font-size: 1.3rem;
   }
 }
 

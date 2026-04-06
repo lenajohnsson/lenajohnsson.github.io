@@ -1,8 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Dynalight:regular);
-@import url(https://fonts.googleapis.com/css?family=Luxurious+Script:regular);
-@import url(https://fonts.googleapis.com/css?family=Kapakana:300,regular);
 @import url(https://fonts.googleapis.com/css?family=Asset:regular);
-@import url(https://fonts.googleapis.com/css?family=Gasoek+One:regular);
 @import url(https://fonts.googleapis.com/css?family=Ultra:regular);
 @import url(https://fonts.googleapis.com/css?family=Alfa+Slab+One:regular);
 @import url(https://fonts.googleapis.com/css?family=Merriweather:300,regular,500,600,700,800,900,300italic,italic,500italic,600italic,700italic,800italic,900italic);
@@ -50,8 +47,6 @@ body {
   max-inline-size: 850px;
   margin-inline: auto;
   min-height: 100%;
-
-  /* border: solid red 2px; */
 }
 
 a {
@@ -59,6 +54,7 @@ a {
 }
 
 /* ---HEADER--- */
+
 .div-header {
   display: grid;
   grid-template-columns: 1fr auto 1fr;
@@ -135,6 +131,23 @@ a {
 
 /* ---MAIN--- */
 
+/* ---navigation on the cv and education page */
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: var(--border-radius);
+  padding: var(--padding);
+  margin-block: var(--margin-block);
+
+  a {
+    font-size: 1.2rem;
+    transition: 0.5s ease;
+  }
+  a:hover {
+    font-size: 1.3rem;
+  }
+}
 .no-link {
   p {
     font-size: 1.5rem;

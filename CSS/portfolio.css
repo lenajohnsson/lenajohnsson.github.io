@@ -10,8 +10,11 @@ body {
   box-shadow: var(--box-shadow) var(--dark-green);
 
   h1 {
-    font-family: Ultra, sans-serif;
+    font-family:
+      Alfa Slab One,
+      sans-serif;
     font-size: 3.5rem;
+    letter-spacing: 0.5px;
   }
 }
 

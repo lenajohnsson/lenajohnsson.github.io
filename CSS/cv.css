@@ -28,23 +28,12 @@ body {
 /* ---MAIN--- */
 
 .navigation {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-radius: var(--border-radius);
-  padding: var(--padding);
-  margin-block: var(--margin-block);
   background-color: var(--light-green);
   color: var(--dark-green);
   box-shadow: var(--box-shadow) var(--dark-green);
 
   a {
-    font-size: 1.2rem;
     color: var(--dark-green);
-    transition: 0.5s ease;
-  }
-  a:hover {
-    font-size: 1.3rem;
   }
 }
 
