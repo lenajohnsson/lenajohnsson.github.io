@@ -30,7 +30,9 @@ body {
   background-color: var(--light-purple);
   color: var(--dark-purple);
   box-shadow: var(--box-shadow) var(--dark-purple);
-
+  p {
+    margin-block: 16px;
+  }
   a {
     color: var(--dark-purple);
   }
@@ -41,11 +43,42 @@ body {
   gap: 30px;
 }
 
+.div-section:not(.navigation) {
+  h2 {
+    font-size: 1.3rem;
+    margin-block: 5px;
+  }
+  h3 {
+    font-size: 1.1rem;
+  }
+  p {
+    margin-block: 0px 10px;
+  }
+}
+
 .div-section1 {
   flex-direction: column;
   background-color: var(--light-yellow);
   color: var(--dark-yellow);
   box-shadow: var(--box-shadow) var(--dark-yellow);
+
+  > p,
+  > h3 {
+    margin-block: 5px;
+  }
+}
+.section-main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  > * {
+    flex: 1;
+  }
+}
+.image-header {
+  max-width: 250px;
+  border-radius: var(--border-radius);
 }
 
 .div-section2 {
