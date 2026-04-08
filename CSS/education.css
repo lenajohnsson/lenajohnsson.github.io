@@ -66,19 +66,10 @@ body {
   > h3 {
     margin-block: 5px;
   }
-}
-.section-main {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
 
-  > * {
-    flex: 1;
+  p:not(:has(em)) {
+    font-size: 0.9rem;
   }
-}
-.image-header {
-  max-width: 250px;
-  border-radius: var(--border-radius);
 }
 
 .div-section2 {
