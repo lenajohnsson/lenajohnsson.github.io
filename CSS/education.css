@@ -78,6 +78,7 @@ body {
   background-color: var(--light-blue);
   color: var(--dark-blue);
   box-shadow: var(--box-shadow) var(--dark-blue);
+  margin-block: 0px 20px;
 }
 
 .div-section3 {
@@ -86,6 +87,7 @@ body {
   background-color: var(--light-green);
   color: var(--dark-green);
   box-shadow: var(--box-shadow) var(--dark-green);
+  margin-block: 0px 20px;
 }
 
 .div-section4 {
