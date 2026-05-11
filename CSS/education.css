@@ -104,6 +104,22 @@ body {
   box-shadow: var(--box-shadow) var(--dark-peach);
 }
 
+/* ---Media--- */
+@media (max-width: 550px) {
+  .div-section1,
+  .div-section2,
+  .div-section3,
+  .div-section4,
+  .div-section5,
+  .courses {
+    flex-direction: column;
+    text-align: center;
+  }
+  .courses {
+    gap: 10px;
+  }
+}
+
 /* ---FOOTER--- */
 
 .div-footer {

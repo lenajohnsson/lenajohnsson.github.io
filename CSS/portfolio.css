@@ -183,6 +183,33 @@ button {
   align-items: center;
 }
 
+/* ---Media--- */
+@media (max-width: 550px) {
+  .main-sections {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+
+  .div-section1,
+  .div-section2,
+  .div-section3,
+  .div-section4 {
+    grid-area: unset;
+  }
+
+  .section-main1 {
+    flex-direction: column-reverse;
+  }
+
+  .div-section2 {
+    margin-block: 10px 0px;
+  }
+
+  .div-section4 {
+    margin-block: var(--margin-block);
+  }
+}
+
 /* ---FOOTER--- */
 
 .div-footer {

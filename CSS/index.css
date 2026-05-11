@@ -158,6 +158,25 @@ img {
   transform: scale(1.1);
 }
 
+/* ---Media--- */
+@media (max-width: 550px) {
+  .div-section1,
+  .div-section2 {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .div-section2 {
+    flex-direction: column-reverse;
+  }
+
+  .div-img1,
+  .div-img2 {
+    margin: auto;
+    margin-block: 20px;
+  }
+}
+
 /* ---FOOTER--- */
 
 .div-footer {
